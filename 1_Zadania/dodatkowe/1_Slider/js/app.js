@@ -10,17 +10,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     //[index].
     //photoArray = document.getElementsByClassName("slider").getElementsByTagName('li')[0];
     photoArray = document.getElementsByClassName('slider')[0].getElementsByTagName('li'); 
-    photoArray[index].classList.add('visible'); 
-    console.log(photoArray[index]);
+    photoArray[imgIndex].classList.add('visible'); 
+    
+    console.log(photoArray[imgIndex]);
     console.log(prev);
-
     console.log(next);
        
 
     function nextClicked() {
         photoArray[imgIndex].classList.remove('visible');
         console.log("next clicked");
-        if  (imgIndex >= photoArray.length-1) index = 0;
+        if  (imgIndex >= photoArray.length-1) imgIndex = 0;
         else imgIndex++;
         photoArray[imgIndex].classList.add('visible'); 
     }
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         photoArray[imgIndex].classList.add('visible'); 
     }
 
-    next.addEventListener("click", nextClicked );
+    next.addEventListener("click", nextClicked);
     prev.addEventListener("click", prevClicked);
 
     
