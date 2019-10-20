@@ -1,13 +1,10 @@
 //Zadanie 0a
 
 var city = {
-
-    capital: 'stolica',
-    population: 0,
-    president: 'prezydent',
-    primeMinisters : []
-
-
+    capital: 'Warszawa',
+    population: 38000000,
+    president: 'Andrzej Duda',
+    primeMinisters : ["minister1", "minister2"]
 
 }
 
@@ -31,13 +28,15 @@ timeMachine.run = function(date, place) {
 
     this.date = date;
     this.place = place;
-
+    console.log(this.shape);
+    console.log(this.model);
+    console.log(this.date);
+    console.log(this.place);
 }
 
-console.log(timeMachine.shape)
-console.log(timeMachine.model)
 
-timeMachine.run('08/07/2000', 'egipt')
+
+timeMachine.run('08/07/2000', 'egipt');
 
 
 // Zadanie 1
@@ -74,7 +73,7 @@ person.sayHello();
 
 //Zadanie 3
 
-var przepis = new function() {
+var recipe = new function() {
     this.title = "nazwa";
     this.servings = 4;
     
@@ -143,11 +142,6 @@ var animals = [
 
 ]
 
-// for (var property in animals) {
-//     //if (Object.prototype.hasOwnProperty.call(movie, property)) {
-//         console.log(`property : ${property}, value: ${animals[property]} `)
-//     //}
-// }
 
 var iterateAll = function(obj) {
 
