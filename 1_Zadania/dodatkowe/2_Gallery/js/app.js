@@ -32,7 +32,6 @@ function myCode() {
         
         
         //getElementsByTagName('img')[0].src
-        var bdy = document.getElementsByTagName("body");
         var img = this.querySelector('img');   
         console.log(img.src); 
         //document.body.style.background = "#f3f3f3 url('${this.querySelector('img').src}') no-repeat right top";
@@ -50,10 +49,10 @@ function myCode() {
         //console.log(gen().next())
         
         if (document.body.hasChildNodes()) {
-            document.body.replaceChild(img,bdy.ch);
+            document.body.removeChild(document.body.lastChild);
             
          } 
-        else document.body.appendChild(imgc);;
+        else document.body.appendChild(imgc);
             // while (body.hasChildNodes()) {  
                 
             //   }
