@@ -35,11 +35,7 @@ car.addControl = function(controlDate) {
 };
 
 car.showAllControls = function() {
-    for (let i = 0; i < this.controlList.length; i++){
-
-        console.log(this.controlList[i]);
-        
-    }
+    return this.controlList
 
 
 } 

@@ -8,17 +8,18 @@ var Basket = function () {
 
 
 Basket.prototype.addProduct = function(name, price) {
-    this.products.push({name: name, price: price});
+    this.products.push({name, price});
 
 };
 
 Basket.prototype.showBasket = function() {
 
-    for (let index = 0; index < this.products.length; index++) {
-        console.log(this.products[index]);
+    // for (let index = 0; index < this.products.length; index++) {
+    //     console.log(this.products[index]);
         
-    }
-
+    // }
+    console.log(this.products);
+    console.log(this.sum);
 
 };
 
