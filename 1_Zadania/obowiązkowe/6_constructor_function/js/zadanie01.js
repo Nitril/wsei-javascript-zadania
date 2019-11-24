@@ -27,3 +27,5 @@ var robot1 = new Robot("Alex");
 
 var robot2 = new Robot("Bastion");
 robot1.sayHi("Bastion");
+robot1.changeName("Bubu");
+robot2.sayHi("Zbylu");

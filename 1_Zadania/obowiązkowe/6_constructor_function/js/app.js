@@ -18,8 +18,7 @@ Basket.prototype.showBasket = function() {
     //     console.log(this.products[index]);
         
     // }
-    console.log(this.products);
-    console.log(this.sum);
+    return this.products
 
 };
 

@@ -5,21 +5,21 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+//deklaracja funkcji sortArray
 function sortArray() {
 
-    //Twoj komentarz ...
+    //deklaracja tablicy z liczbami do posortowania
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
+    //wywałenie metpdy sortującej sort na tablicy points
     points.sort(function (a, b) {
-        //Twoj komentarz ...
+        // funkcja compareFunction  bedąca parametrem funkcji sort przekazuje informacje o sposobie sortowania liczb. w tym wypadku funkcjaw celu porównania odejmuje a od b czyli elementy porównywane
         return a - b;
     });
 
-    //Twoj komentarz ...
+    //zwrócenie posortowaniej tablicy points
     return points;
 }
 
-//Twoj komentarz ...
+//wywołanie funkcji sortArray
 sortArray();

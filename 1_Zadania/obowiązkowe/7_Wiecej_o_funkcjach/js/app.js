@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+//deklaracja funkcji o nazwie jeden
 function jeden() {
 
-    //Twoj komentarz ...
+    //deklaracja zmiennej zmienna1 - zmienna lokalna dla funkcji jeden
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //Deklaracja funkcji dwa we wnętrzu funkcji jeden. stworzenie nowego zakresu dla funkcji dwa
     function dwa() {
 
-        //Twoj komentarz ...
+        //wypisanie do konsoli zawartości zmiennej jeden - jest to zmienna dostępne z poziomu funkcji dwa
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //deklaracja zmienna2 jako zmiennej lokalnej dla zakresu dwa
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //wywołanie funkcji dwa w ramach wykonywania funkcji jeden
     dwa();
 
-    //Twoj komentarz ...
+    //wypisanie do do konsoli zawartosci zmiennej2 - niedostępnej z poziomu funkcji jeden ponieważ jest zadeklarowana jako zmienna lokalna dla funkcji dwa
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//wywołanie funkcji jeden
 jeden()
