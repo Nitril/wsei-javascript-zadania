@@ -22,3 +22,5 @@ var sayHello = function() {
 
 sayHello();
 // funkcja sayHello wywołuje się poprawnie wywołyawna po definicji funkcji
+
+//silnik v8 nie przenosi do góry

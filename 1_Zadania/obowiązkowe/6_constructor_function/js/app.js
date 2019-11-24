@@ -9,6 +9,8 @@ var Basket = function () {
 
 Basket.prototype.addProduct = function(name, price) {
     this.products.push({name, price});
+    this.sum += price;
+    // {name: name, price: price}
 
 };
 
@@ -18,7 +20,8 @@ Basket.prototype.showBasket = function() {
     //     console.log(this.products[index]);
         
     // }
-    return this.products
+    console.table(this.products);
+    console.log(this.sum);
 
 };
 
