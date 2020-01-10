@@ -16,8 +16,8 @@ function myCode() {
             
             //console.log(this.dataset.text);
             let span = document.createElement("span");
-            span.classList.add('tooltipText');
             let close = document.createTextNode(this.dataset.text);                        
+            span.classList.add('tooltipText');
             span.appendChild(close);
             this.appendChild(span);
 

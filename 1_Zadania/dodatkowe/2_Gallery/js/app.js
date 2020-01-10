@@ -49,7 +49,7 @@ function myCode() {
         button.appendChild(close);
         div.appendChild(imgc);
         div.appendChild(button);
-        body.appendChild(div)
+        body.appendChild(div);
         
         button.addEventListener('click', function() {
 
