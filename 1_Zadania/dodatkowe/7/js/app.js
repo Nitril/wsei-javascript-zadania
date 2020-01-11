@@ -122,10 +122,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getLastNumbers(number, array) {
         var retArray = [];
-        if (typeof(number) != undefined && !isNaN(number))   {
+        if (!isNaN(number))   {
             for (let i = (array.length-number); number > 0; number--, i++) {
             
-            retArray.push(array[i]);
+                retArray.push(array[i]);
             }
         }
         return retArray;
@@ -135,4 +135,5 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(getLastNumbers(4, [6,7,8,10,11,12,13,14,15])); // [12, 13, 14, 15]
     console.log(getLastNumbers([-4,-3,-2,0,1,2,3,4])); // []
     console.log(getLastNumbers('ala', [-4,-3,-2,0,1,2,3,4])); // []
+
 })

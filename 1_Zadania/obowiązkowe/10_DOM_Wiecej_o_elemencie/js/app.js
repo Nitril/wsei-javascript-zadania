@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     for (let i = 0; i < ex5.length; i++) {
         if (i === 0 || i % 2 === 0) ex5[i].style.backgroundColor = "green";
-        if (i % 5 === 0) ex5[i].classList.toggle("big");
+        if (i % 5 === 0) ex5[i].classList.add("big");
         if (i % 3 === 0) ex5[i].style.textDecoration = "underline";
     }
 
@@ -33,4 +33,40 @@ document.addEventListener("DOMContentLoaded", function () {
     firefox.nextElementSibling.innerHTML =  'Firefox'; //zwraca element nie obiekt
     firefox.nextElementSibling.setAttribute('href', 'http://firefox.com');
     //backgroundRepeat
+
+    //Zadanie 2
+    var ex2 = document.querySelectorAll('.ex2 li');
+
+    var name = document.getElementById('name');
+    var fav_color = document.getElementById('fav_color');
+    var fav_meal = document.getElementById('fav_meal');
+
+    name.innerHTML = 'Karol';
+    fav_color.innerHTML = 'niebieski';
+    fav_meal.innerHTML = 'pizza';
+
+    //Zadanie 3
+
+    var ex2 = document.querySelector('.ex3 ul');
+    ex2.classList.add("menu");
+    var li = Array.from(document.querySelectorAll('.ex3 li'));
+
+    for (let i = 0; i < li.length; i++) {
+        li[i].classList.add("menuElement");
+        li[i].classList.remove("error");
+    }
+
+    //Zadanie 4
+
+    var ex4 = Array.from(document.querySelectorAll('.ex4 li'));
+
+    for (let i = 0; i < ex4.length; i++) {
+        
+        ex4[i].setAttribute('data-id', i+1);
+        //console.log(ex4[i].dataset);
+    }
+    
+    
+
+
 });
