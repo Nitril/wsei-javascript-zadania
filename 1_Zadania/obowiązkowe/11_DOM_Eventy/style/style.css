@@ -10,12 +10,12 @@
 
 
 .box {
-    width: 150px;
+    width: 250px;
     height: 150px;
     background-color: antiquewhite;
     border-radius: 5px;
     border: black 2px solid;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .big {

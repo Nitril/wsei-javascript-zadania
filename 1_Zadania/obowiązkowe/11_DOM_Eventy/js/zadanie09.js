@@ -19,6 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function innerFuncOne() {
       // Tutaj this wskazuje na element Window, bo funkcja została
       //wywołana bez żadnego kontekstu.
+      
+      //Odpowiedź: odwolam się bezpośrednio do elementu b bez użycia "this" ponieważ 
+      // kontekst na który wskazuje this jest wewnątrz funcji fnkcją
+      //np: var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+      //b.style.backgroundColor = randomColor;
       console.log("innerFuncOne: ", this);
     }
     innerFuncOne();
