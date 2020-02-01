@@ -4,14 +4,14 @@ var calculator = {
         this.b = newB;
     },
 
-    sum: function() {
-        return this.a + this.b; 
+    sum: function () {
+        return this.a + this.b;
 
 
     },
 
-    multiply: function() {
-        return this.a * this.b; 
+    multiply: function () {
+        return this.a * this.b;
 
 
     }

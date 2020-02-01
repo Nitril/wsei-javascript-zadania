@@ -31,3 +31,24 @@ var animals = [
     }
 
 ]
+
+
+var iterateAll = function (obj) {
+
+
+    for (var property in obj) {
+
+        if (obj.hasOwnProperty(property) && (typeof obj[property] === "object")) {
+            //if (Object.prototype.hasOwnProperty.call(obj, property)&& (typeof obj[property] === "object")) {
+            iterateAll(obj[property]);
+        }
+        else console.log(`property : ${property}, value: ${obj[property]}\n`);
+
+
+
+    }
+
+
+}
+
+iterateAll(animals)

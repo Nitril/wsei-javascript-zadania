@@ -8,9 +8,9 @@ function myCode() {
     console.log(li);
 
     for (let i = 0; i < li.length; i++) {
-        
-        li[i].addEventListener("mouseover", function() {
-            
+
+        li[i].addEventListener("mouseover", function () {
+
             var subList = this.querySelector("ul");
             if (subList != null) {
                 //console.log(subList);
@@ -18,10 +18,10 @@ function myCode() {
                 subList.style.display = "inline-block";
             }
         }, false);
-        
-        
-        li[i].addEventListener("mouseout", function() {
-            
+
+
+        li[i].addEventListener("mouseout", function () {
+
             var subList = this.querySelector("ul");
             if (subList != null) {
                 //console.log(subList);

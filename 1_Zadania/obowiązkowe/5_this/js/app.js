@@ -6,17 +6,17 @@ var car = {
     color: "Czerwony",
     numberOfKilometers: 0,
 
-    printCarinfo: function() {
+    printCarinfo: function () {
 
         return `${this.color} ${this.brand}, ${this.numberOfKilometers}`;
 
 
     },
 
-    drive: function(km) {
+    drive: function (km) {
         this.numberOfKilometers += km;
-    }        
-    
+    }
+
 
 
 }
@@ -29,34 +29,34 @@ car.printCarinfo();
 
 car.controlList = [];
 
-car.addControl = function(controlDate) {
+car.addControl = function (controlDate) {
     this.controlList.push(controlDate);
 
 };
 
-car.showAllControls = function() {
+car.showAllControls = function () {
     return this.controlList
 
 
-} 
+}
 
 // Zadanie 3 
 
 var stairs = {
 
     step: 0,
-    up: function() {
+    up: function () {
         this.step++;
 
     },
 
-    down: function() {
+    down: function () {
 
         this.step--;
     },
 
 
-    printStep: function() {
+    printStep: function () {
         console.log(this.step);
 
     }
@@ -65,5 +65,5 @@ var stairs = {
 stairs.up();
 stairs.up();
 stairs.up();
-stairs.down(); 
+stairs.down();
 stairs.printStep()

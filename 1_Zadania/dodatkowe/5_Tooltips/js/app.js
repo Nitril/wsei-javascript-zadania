@@ -10,21 +10,21 @@ function myCode() {
     var tooltips = document.getElementsByClassName("tooltip");
 
     for (let i = 0; i < tooltips.length; i++) {
-        
-                
-        tooltips[i].addEventListener('mouseover', function() {
-            
+
+
+        tooltips[i].addEventListener('mouseover', function () {
+
             //console.log(this.dataset.text);
             let span = document.createElement("span");
-            let close = document.createTextNode(this.dataset.text);                        
+            let close = document.createTextNode(this.dataset.text);
             span.classList.add('tooltipText');
             span.appendChild(close);
             this.appendChild(span);
 
         }, false);
-        
-        tooltips[i].addEventListener('mouseout', function() {
-            
+
+        tooltips[i].addEventListener('mouseout', function () {
+
             //console.log(this.dataset.text);
             let span = this.querySelector(".tooltipText");
 

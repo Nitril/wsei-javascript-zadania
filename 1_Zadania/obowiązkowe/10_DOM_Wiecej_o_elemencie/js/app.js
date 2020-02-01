@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Zadanie 0
     var ex5 = document.querySelectorAll('.ex5 li');
-    
+
     for (let i = 0; i < ex5.length; i++) {
         if (i === 0 || i % 2 === 0) ex5[i].style.backgroundColor = "green";
         if (i % 5 === 0) ex5[i].classList.add("big");
@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
     chrome.style.width = '100px';
     chrome.style.height = '100px';
 
-    chrome.nextElementSibling.innerHTML =  'Chrome'; //zwraca element nie obiekt
+    chrome.nextElementSibling.innerHTML = 'Chrome'; //zwraca element nie obiekt
     chrome.nextElementSibling.setAttribute('href', 'http://chrome.com');
-    edge.nextElementSibling.innerHTML =  'Edge'; //zwraca element nie obiekt
+    edge.nextElementSibling.innerHTML = 'Edge'; //zwraca element nie obiekt
     edge.nextElementSibling.setAttribute('href', 'http://edge.com');
-    firefox.nextElementSibling.innerHTML =  'Firefox'; //zwraca element nie obiekt
+    firefox.nextElementSibling.innerHTML = 'Firefox'; //zwraca element nie obiekt
     firefox.nextElementSibling.setAttribute('href', 'http://firefox.com');
     //backgroundRepeat
 
@@ -61,12 +61,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var ex4 = Array.from(document.querySelectorAll('.ex4 li'));
 
     for (let i = 0; i < ex4.length; i++) {
-        
-        ex4[i].setAttribute('data-id', i+1);
+
+        ex4[i].setAttribute('data-id', i + 1);
         //console.log(ex4[i].dataset);
     }
-    
-    
+
+
 
 
 });

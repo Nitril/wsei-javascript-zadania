@@ -13,7 +13,7 @@ sayHi();
 // funkcja sayHello nie wywołuje się poprawnie wywołyawna przed jak definicją funkcji
 sayHello();
 
-var sayHello = function() {
+var sayHello = function () {
 
     console.log("Witaj")
 

@@ -9,3 +9,9 @@ var movie = {
     time: "2h 58 min",
     category: " Adventure, Drama, Fantasy"
 }
+
+for (var property in movie) {
+    //if (Object.prototype.hasOwnProperty.call(movie, property)) {
+    console.log(`property : ${property}, value: ${movie[property]} `)
+    //}
+}

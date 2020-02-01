@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
 
     var button = document.getElementById("mainBtn");
 
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         console.log("Hura! Działa!");
 
     }, false);

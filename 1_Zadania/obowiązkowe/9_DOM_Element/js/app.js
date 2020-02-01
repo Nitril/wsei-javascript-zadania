@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function getDatasInfo(elements) {
         var newArray = [];
-        
+
         for (let i = 0; i < array.length; i++) {
             newArray.push(elements[i].getAttribute('data-color'));
-            
+
         }
         console.log(newArray);
         return newArray;
@@ -32,18 +32,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let i = 0; i < childElements.length; i++) {
         console.log(childElements.tagName, childElements.classList);
-        
+
     }
 
     for (let i = 0; i < blocks.length; i++) {
         console.log(blocks.tagName, blocks.classList);
-        
+
     }
 
 
     for (let i = 0; i < links.length; i++) {
         console.log(links.tagName, links.classList);
-        
+
     }
 
 
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //Zadanie 3
 
     var mainFooter = document.querySelector('#mainFooter');
-    function getID(element){
+    function getID(element) {
         console.log(element.id);
         return element.id;
 
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         for (let i = 0; i < elements.length; i++) {
             arr1.push(elements[i].childElements.tagName);
-            
+
         }
         return childElements
 
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         for (let i = 0; i < element.classList.length; i++) {
             arr.push(element.classList[i]);
-            
+
         }
         console.log(arr);
         return arr;
@@ -104,9 +104,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var liElements = document.querySelectorAll('new li');
 
-    function setDataDirection(elements){
-        for(item of elements) {
-            if(!item.getAttribute('data-direction')){
+    function setDataDirection(elements) {
+        for (item of elements) {
+            if (!item.getAttribute('data-direction')) {
                 item.setAttribute('data-direction', 'top');
 
             }

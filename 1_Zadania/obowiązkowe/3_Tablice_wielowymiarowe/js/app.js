@@ -25,16 +25,16 @@ var arr = [
 function checkArray(inputArray) {
 
     var outputArray = [];
-    
+
     for (let x = 0; x < inputArray.length; x++) {
         outputArray[x] = true
         for (let y = 0; y < inputArray[x].length; y++) {
-            
+
             if (inputArray[x][y] % 2 != 0) {
                 outputArray[x] = false
-                
+
             }
-            
+
         }
     }
 
@@ -55,22 +55,22 @@ console.log(task1Array[4][2]);
 
 for (let x = 0; x < task2Array.length; x++) {
     console.log(task2Array[x]);
-    
-    
+
+
 }
 
 for (let x = 0; x < task2Array.length; x++) {
     console.log(task2Array[x].length)
-    
+
 }
 
 for (let x = 0; x < task2Array.length; x++) {
-    
+
     for (let y = 0; y < task2Array[x].length; y++) {
-        
+
         console.log(task2Array[x][y]);
-            
-        
+
+
     }
 }
 
@@ -79,12 +79,12 @@ for (let x = 0; x < task2Array.length; x++) {
 function print2DArray(array2D) {
 
     for (let x = 0; x < array2D.length; x++) {
-    
+
         for (let y = 0; y < array2D[x].length; y++) {
-            
+
             console.log(array2D[x][y]);
-                
-            
+
+
         }
     }
 
@@ -108,17 +108,17 @@ print2DArray(task4Array);
 //Zadanie 5
 
 function create2DArray(rows, columns) {
-    
+
     var array2D = [];
     var counter = 1;
-    
+
     for (let row = 0; row < rows; row++) {
         array2D.push([]);
 
         for (let column = 0; column < columns; column++) {
             array2D[row].push(counter);
             counter++;
-                            
+
         }
     }
     return array2D;

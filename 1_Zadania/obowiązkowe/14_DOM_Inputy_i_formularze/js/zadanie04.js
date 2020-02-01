@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var currentValue = cardNumber.value;
         
-        if (currentValue[0] == '4') {
+        if (currentValue[0] == 4) {
             
             type.innerText = "Visa";
             //console.log(currentValue.length);
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
         else {
-
+            //cardNumber.style.borderColor = "red";
             type.innerText = "";
         }        
 

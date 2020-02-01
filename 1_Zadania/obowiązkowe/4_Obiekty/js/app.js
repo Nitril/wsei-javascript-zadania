@@ -4,7 +4,7 @@ var city = {
     capital: 'Warszawa',
     population: 38000000,
     president: 'Andrzej Duda',
-    primeMinisters : ["minister1", "minister2"]
+    primeMinisters: ["minister1", "minister2"]
 
 }
 
@@ -24,7 +24,7 @@ timeMachine.shape = 'string';
 timeMachine.model = 'model';
 //timeMachine.president = 'president';
 
-timeMachine.run = function(date, place) {
+timeMachine.run = function (date, place) {
 
     this.date = date;
     this.place = place;
@@ -54,11 +54,11 @@ console.log(book.numberOfPages);
 
 //Zadanie 2
 
-function person () {
+function person() {
     this.name = 'imię';
     this.age = 0;
-    
-    this.sayHello = function() {
+
+    this.sayHello = function () {
         console.log("hello");
 
     }
@@ -68,15 +68,15 @@ var person = new person();
 
 console.log(person.name);
 console.log(person.age);
-person.sayHello();  
+person.sayHello();
 
 
 //Zadanie 3
 
-var recipe = new function() {
+var recipe = new function () {
     this.title = "nazwa";
     this.servings = 4;
-    
+
 }
 
 przepis.ingredients = ['pietruszka', 'mango'];
@@ -101,7 +101,7 @@ var movie = {
 
 for (var property in movie) {
     //if (Object.prototype.hasOwnProperty.call(movie, property)) {
-        console.log(`property : ${property}, value: ${movie[property]} `)
+    console.log(`property : ${property}, value: ${movie[property]} `)
     //}
 }
 
@@ -143,21 +143,21 @@ var animals = [
 ]
 
 
-var iterateAll = function(obj) {
+var iterateAll = function (obj) {
 
-    
+
     for (var property in obj) {
-        
+
         if (obj.hasOwnProperty(property) && (typeof obj[property] === "object")) {
-        //if (Object.prototype.hasOwnProperty.call(obj, property)&& (typeof obj[property] === "object")) {
+            //if (Object.prototype.hasOwnProperty.call(obj, property)&& (typeof obj[property] === "object")) {
             iterateAll(obj[property]);
         }
         else console.log(`property : ${property}, value: ${obj[property]}\n`);
-                 
-       
+
+
 
     }
-    
+
 
 }
 
@@ -170,7 +170,7 @@ var spoon = {
 }
 
 var fork = spoon;
-fork.isExist  = false;
+fork.isExist = false;
 
 console.log(spoon.isExist)
 

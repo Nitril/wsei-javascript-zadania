@@ -49,7 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (points1.value < 0 || points2.value < 0) {
             validated = false;
-            
+
+
         }
 
         return validated;
